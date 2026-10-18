@@ -1,0 +1,20 @@
+# coding-agent (后台编码委托)
+
+> 将编码工作委托给 Codex、Claude Code 或 OpenCode 作为后台工作进程执行——适用大型重构、PR 审查、后台功能开发等长任务；派单、执行与回收全过程按证据链审计留痕。
+
+`coding-agent` 是一个遵循 Agent Skills 规范的技能发布包，分类：开发工具 / Dev Tools，版本 1.0.0。可放入主流 AI Agent 的技能目录直接加载。
+
+## 核心
+
+- [SKILL.md](https://github.com/zhaoxinghua09-cell/coding-agent/blob/main/SKILL.md): 技能主文件（YAML frontmatter + 全量方法与触发词）
+- [manifest.json](https://github.com/zhaoxinghua09-cell/coding-agent/blob/main/manifest.json): 技能元数据（名称 / 版本 / 许可 / 描述）
+- [README.md](https://github.com/zhaoxinghua09-cell/coding-agent/blob/main/README.md): 项目说明与快速开始
+
+## 可选
+
+- [README.en.md](https://github.com/zhaoxinghua09-cell/coding-agent/blob/main/README.en.md): 英文版说明
+- [AGENTS.md](https://github.com/zhaoxinghua09-cell/coding-agent/blob/main/AGENTS.md): 给 AI Agent 的工作指引
+- [llms-full.txt](https://github.com/zhaoxinghua09-cell/coding-agent/blob/main/llms-full.txt): 完整文本（供长上下文模型）
+- [SECURITY.md](https://github.com/zhaoxinghua09-cell/coding-agent/blob/main/SECURITY.md): 安全策略
+- [CONTRIBUTING.md](https://github.com/zhaoxinghua09-cell/coding-agent/blob/main/CONTRIBUTING.md): 贡献指南
+- [LICENSE](https://github.com/zhaoxinghua09-cell/coding-agent/blob/main/LICENSE): MIT 许可

@@ -1,0 +1,55 @@
+# coding-agent (后台编码委托) — 完整文本
+
+本文件为 llms.txt 标准的「完整版」，供长上下文模型一次性读取本仓库的完整说明。
+
+## 这是什么
+
+`coding-agent` 是一个 Agent Skill 发布包，分类 开发工具 / Dev Tools，版本 1.0.0。
+
+一句话：将编码工作委托给 Codex、Claude Code 或 OpenCode 作为后台工作进程执行——适用大型重构、PR 审查、后台功能开发等长任务；派单、执行与回收全过程按证据链审计留痕。
+
+## 解决什么问题
+
+把长编码任务丢给后台 runner，全程可还原「谁、依据什么、改了什么」。对应典型提问：
+
+```text
+「大重构能不能丢给后台跑」
+「PR 能不能自动审」
+「把这个后台功能开发派出去跑」
+```
+
+## 特性
+
+- 后台长任务：大型重构、PR 审查、后台功能开发等不适合前台阻塞的任务
+- 多 runner：Codex / Claude Code / OpenCode 作为后台工作进程
+- 证据链审计：可还原「哪个 agent、依据什么指令、改了什么」
+- 派单 → 执行 → 回收：全过程留痕，失败可回溯
+- 通用方法论工具：非医疗器械 / 非医疗软件，无疗效或临床声明
+- 多语种：中 / 英 / 日 / 韩 / 西 / 法 / 德 / 阿（核心 8 种）
+
+## 快速开始
+
+```bash
+# 1. 克隆本仓库
+git clone https://github.com/zhaoxinghua09-cell/coding-agent.git
+cd coding-agent
+
+# 2. 查看技能主文件（派单格式、runner 选择、回收与审计口径）
+cat SKILL.md
+
+# 3. 把技能目录放进你的 Agent 技能目录（示例：WorkBuddy）
+#    cp -r . ~/.workbuddy/skills/coding-agent/
+```
+
+## 触发词
+
+后台编码 · coding agent · 大型重构 · PR 审查 · 自动化 PR · 后台开发 · delegate coding · background coding · codex · claude code。
+
+## 许可与权利
+
+MIT 许可。权利人「赵兴华 / Steven Zhao·China」。MedXpert、SynomosAI、LGD 等为项目标识，均未申请实体注册、未申请商标注册。完整条款见 LICENSE。联系：zhaoxinghua06@126.com ｜ ORCID 0009-0001-0512-1237。
+
+## 链接
+
+- 仓库: https://github.com/zhaoxinghua09-cell/coding-agent
+- 技能主文件: https://github.com/zhaoxinghua09-cell/coding-agent/blob/main/SKILL.md
